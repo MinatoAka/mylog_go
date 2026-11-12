@@ -2,6 +2,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.27.3-00ADD8?logo=go)](https://go.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Support me on Saweria](https://img.shields.io/badge/Support%20me-Saweria-ff69b4?logo=paypal)](https://saweria.co/AKaAturDompet)
 
 A lightweight, zero-dependency leveled logger for Go with optional timestamps, bold prefixes, and automatic terminal coloring.
 
