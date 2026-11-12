@@ -1,4 +1,4 @@
-# mylog
+# mylog_go
 
 A lightweight, zero-dependency leveled logger for Go with optional timestamps, bold prefixes, and automatic terminal coloring.
 
