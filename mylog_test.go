@@ -27,11 +27,15 @@ func TestInfoOutput(t *testing.T) {
 		Info("Hello %s", "Jenderal")
 	})
 
-	if !strings.Contains(out, "[INF] Hello Jenderal") {
-		t.Errorf("Output tidak sesuai format: %s", out)
+	// Cek prefix dan pesan secara terpisah (karena ada ANSI di antaranya)
+	if !strings.Contains(out, "[INF]") {
+		t.Errorf("Prefix [INF] tidak ditemukan: %q", out)
+	}
+	if !strings.Contains(out, "Hello Jenderal") {
+		t.Errorf("Pesan tidak ditemukan: %q", out)
 	}
 	if !strings.Contains(out, colorCyan) {
-		t.Errorf("Output tidak ada warna Cyan")
+		t.Errorf("Warna Cyan tidak ditemukan: %q", out)
 	}
 }
 
